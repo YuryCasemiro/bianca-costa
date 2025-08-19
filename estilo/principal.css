@@ -27,10 +27,10 @@ body {
     height: 1000px;
 }
 
-.pelicula {
+/* .pelicula {
     background-color: rgba(0, 0, 0, 0.384);
     height: 100%;
-}
+} */
 
 .topo {
     display: flex;
@@ -39,11 +39,39 @@ body {
     padding: 60px 10px;
 }
 
-nav > a {
+/* nav > a {
     text-decoration: none;
     color: #f9f8f4;
     padding: 40px;
     text-shadow: 1px 1px 10px #00000094;
     font-weight: 500;
     font-size: 23px;
+} */
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.menu a {
+    color: #f9f8f4;
+    font-weight: 600px;
+    text-decoration: none;
+    padding: 8px 12px; 
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
 }

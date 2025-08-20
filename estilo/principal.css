@@ -8,6 +8,7 @@
     font-family: "Poppins", serif;
 }
 
+
 body {
     background-color: #f9f8f4;
 }
@@ -21,57 +22,90 @@ body {
 /* Configuração topo/ menu */
 .capa {
     background-image: url('../assets/img/fotos-galerias/enhanced-image\ \(4\).webp');
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 1000px;
+    height: 100vh;
 }
-
-/* .pelicula {
-    background-color: rgba(0, 0, 0, 0.384);
-    height: 100%;
-} */
 
 .topo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 10px;
 }
 
-/* nav > a {
-    text-decoration: none;
-    color: #f9f8f4;
-    padding: 40px;
-    text-shadow: 1px 1px 10px #00000094;
-    font-weight: 500;
-    font-size: 23px;
-} */
-
-.menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px 30px;
-
+.fundo-menu {
+    max-width: 1024px;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0px auto;
 
-    display: flex;
-    justify-content: flex-end;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+    top: 30px;
+    left: 0;
+}
+
+.menu {
+    flex: 1;
 }
 
 .menu a {
-    color: #f9f8f4;
-    font-weight: 600px;
+    padding: 10px;
+    font-size: 21px;
     text-decoration: none;
-    padding: 8px 12px; 
+    color: #f9f8f4;
 }
 
 .menu a:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+}
+
+.logo {
+    flex: 1;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.logo img {
+    max-width: 20%;
+    height: auto;
+}
+
+.logo-rodape img {
+    max-width: 20%;
+    height: auto;
+}
+
+.titulo-topo {
+    width: 100%;
+    margin-top: 180px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.575);
+    color: #f9f8f4;
+    font-size: 30px;
+}
+
+.bnt-orcamento-sobre {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #bc6c25;
+    border-radius: 5px;
+    background-color: #bc6c25;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.bnt-orcamento-sobre:hover {
+    background-color: #df802d;
+}
+
+.bnt-orcamento-sobre a {
+    text-decoration: none;
+    color: #F9F8F4;
 }

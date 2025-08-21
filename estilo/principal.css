@@ -72,7 +72,7 @@ body {
 }
 
 .logo img {
-    max-width: 20%;
+    max-width: 60%;
     height: auto;
 }
 
@@ -109,3 +109,129 @@ body {
     text-decoration: none;
     color: #F9F8F4;
 }
+
+/* Configuração projetos */
+.projetos h2 {
+    color: #bc6c25;
+    font-size: 40px;
+    text-align: center;
+    margin: 30px;
+}
+
+.img-projetos {
+    width: 100%;
+    display: flex;
+}
+
+.img-projetos img {
+    width: 500px;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.6;
+}
+
+.img-projetos img:hover {
+    opacity: 1;
+}
+
+/* Anuncio */
+.bnt-orcamento {
+    max-width: 100%;
+    margin: 30px 0;
+    padding: 35px;
+    background-color: #5f6c37;
+    text-align: center;
+}
+
+.bnt-orcamento a {
+    display: inline-block;
+    width: 300px;
+    padding: 10px;
+    background-color: #bc6c25;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #F9F8F4;
+}
+
+.bnt-orcamento a:hover {
+    background-color: #df802d;
+}
+
+/* Configuração section sobre */
+.container-sobre h2 {
+    color: #bc6c25;
+    text-align: center;
+    margin: 50px 0 25px 0;
+    font-size: 40px;
+}
+
+article {
+    display: flex;
+    width: 100%;
+}
+
+article p {
+    margin: 80px 0 0 20px;
+    line-height: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+article img {
+    width: 500px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+/* Configuração rodape */
+footer {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #5f6c37;
+}
+
+.rodape {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.logo-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-rodape img {
+    height: 140px;
+    width: 500px;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.contatos a {
+    color: #f9f8f4;
+    text-decoration: none;
+}
+
+.icones-rodape {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.icones-rodape img {
+    width: 27px;
+    border-radius: 50%;
+}
+

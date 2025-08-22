@@ -37,7 +37,7 @@ body {
 
 .fundo-menu {
     max-width: 1024px;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.151);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-radius: 10px;
@@ -189,8 +189,7 @@ article img {
 }
 
 /* Configuração rodape */
-footer {
-    width: 100%;
+ footer {
     margin-top: 30px;
     background-color: #5f6c37;
 }
@@ -201,15 +200,13 @@ footer {
     justify-content: space-between;
 }
 
-.logo-rodape {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .logo-rodape img {
-    height: 140px;
-    width: 500px;
+  /* limita sem forçar 400px */
+  max-width: clamp(100px, 20vw, 100px);
+  height: auto;
+  display: block; /* evita espaço extra inline */
+  
 }
 
 .contatos {
@@ -225,13 +222,16 @@ footer {
 }
 
 .icones-rodape {
-    display: grid;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .icones-rodape img {
-    width: 27px;
+    width: 30px;
     border-radius: 50%;
-}
+} 
+
+
+
 
